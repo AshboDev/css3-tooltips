@@ -1,0 +1,19 @@
+body {
+	margin: 0;
+	padding: 10em 0 0 0;
+	height: 100%;
+	width: 100%;
+	background: #3e474f;
+	font-family: 'Montserrat', Helvetica, sans-serif;
+}
+
+h1,
+p {
+	color: #fff;
+	text-align: center;
+	font-weight: normal;
+}
+
+h1 {
+	margin: 0 0 40px 0;
+}

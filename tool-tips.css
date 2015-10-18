@@ -1,0 +1,50 @@
+.tool-tip {
+	font-style: italic;
+	cursor: help;
+	position: relative;
+}
+
+/* The tooltip itself
+============================================ */
+
+.tool-tip:before {
+	content: attr(data-tool-tip);
+	width: 250px; /* Tooltip width */
+	margin-left: -125px;
+	bottom: 200%;
+	background: #2d3339; /* Tooltip background color */
+	padding: 10px 0;
+	border-radius: 5px;
+	font-size: 13px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.7);
+}
+
+/* The tool tip arrow
+============================================ */
+
+.tool-tip:after {
+	content: "";
+	border: solid 10px;
+	border-color: #2d3339 transparent transparent transparent; /* Tooltip arrow color, same as tooltip background color */
+	bottom: 100%;
+	margin-left: -10px;
+}
+
+/* Common styles for pre and on hover
+============================================= */
+
+.tool-tip::before,
+.tool-tip::after {
+	position: absolute;
+	opacity: 0;
+	left: 50%;
+	transform: translateY(30px);
+	transition: linear 0.2s, fade-in-out 0.1s;
+}
+
+.tool-tip:hover::before,
+.tool-tip:hover::after {
+	opacity: 1;
+	transform: translateY(0);
+	transition: linear 0.2s, fade-in-out 0.1s;
+}

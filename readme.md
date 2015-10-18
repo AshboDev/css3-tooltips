@@ -1,6 +1,8 @@
 # CSS Only Tool Tips
 Here you'll be able to find a demo, as well as the code for some simple, yet effective CSS3 tool tips. With basic CSS knowledge you can change the colours and fonts required.
 
+Demo: Coming Soon...
+
 ## Installation
 To install this, simply reference the tool-tips.css file in your <head> section (or put the content of this file in your own).
 

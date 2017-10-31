@@ -10,7 +10,7 @@
 .tool-tip:before {
 	content: attr(data-tool-tip);
 	width: 250px; /* Tooltip width */
-	margin-left: -125px;
+	margin-left: -125px; /* 50% of width */
 	bottom: 200%;
 	background: #2d3339; /* Tooltip background color */
 	padding: 10px 0;
@@ -26,8 +26,8 @@
 	content: "";
 	border: solid 10px;
 	border-color: #2d3339 transparent transparent transparent; /* Tooltip arrow color, same as tooltip background color */
-	bottom: 100%;
-	margin-left: -10px;
+	bottom: 100%; /* Move arrow to bottom of tooltip */
+	margin-left: -10px; /* Positions correctly with border width */
 }
 
 /* Common styles for pre and on hover
@@ -42,6 +42,7 @@
 	transition: linear 0.2s, fade-in-out 0.1s;
 }
 
+/* Show all on hover */
 .tool-tip:hover::before,
 .tool-tip:hover::after {
 	opacity: 1;
